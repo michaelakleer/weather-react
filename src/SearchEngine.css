@@ -1,0 +1,28 @@
+.searchEngine button {
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px 13px 9px 14px;
+}
+
+.searchEngine form {
+  padding: 22px 40px;
+}
+
+.searchEngine .searchBar {
+  background: #ffffff;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px 65px 20px 20px;
+  text-align: left;
+}
+
+.searchEngine .searchButton {
+  background: #ffffff;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 9px 18px;
+}
