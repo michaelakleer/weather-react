@@ -6,7 +6,7 @@ export default function Link() {
     <div className="Link">
       <div className="openSource">
         <a
-          href="https://github.com/michaelakleer/weather-app"
+          href="https://github.com/michaelakleer/weather-react"
           rel="noopener noreferrer"
         >
           Open-source code
