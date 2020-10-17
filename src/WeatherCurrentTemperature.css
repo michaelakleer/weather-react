@@ -1,12 +1,15 @@
 .weatherCurrentTemperature .currentTemp {
+  color: #ffffff;
   font-size: 35px;
   margin: 0;
 }
 
-.weatherCurrentTemperature .feelTemp p {
+.weatherCurrentTemperature .feelTemp {
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
 .weatherCurrentTemperature .weatherDescription {
+  color: #ffffff;
   font-size: 15px;
 }

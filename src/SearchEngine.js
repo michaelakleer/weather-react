@@ -28,7 +28,9 @@ export default function SearchEngine() {
             </button>
           </div>
           <div className="col-1 units">
-            <a href="/">°C</a> | <a href="/">°F</a>
+            <p>
+              <a href="/">°C</a> | <a href="/">°F</a>
+            </p>
           </div>
         </div>
       </form>

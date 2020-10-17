@@ -30,4 +30,13 @@
 .searchEngine .units {
   font-size: 14px;
   display: inline;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #ffffff;
 }

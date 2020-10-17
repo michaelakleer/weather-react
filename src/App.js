@@ -13,8 +13,8 @@ export default function App() {
         <SearchEngine />
         <CurrentInfo />
         <WeatherDetail />
+        <Link />
       </div>
-      <Link />
     </div>
   );
 }
