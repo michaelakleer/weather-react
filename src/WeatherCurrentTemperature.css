@@ -7,21 +7,6 @@
   margin-bottom: 5px;
 }
 
-.weatherCurrentTemperature .units {
-  font-size: 14px;
-  position: relative;
-  top: -13px;
-}
-
-.weatherCurrentTemperature .units .active {
-  color: #000000;
-  cursor: default;
-}
-
-.weatherCurrentTemperature .units .active:hover {
-  text-decoration: none;
-}
-
 .weatherCurrentTemperature .weatherDescription {
   font-size: 15px;
 }
