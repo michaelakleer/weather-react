@@ -7,11 +7,17 @@ export default function Link() {
       <div className="openSource">
         <a
           href="https://github.com/michaelakleer/weather-react"
-          rel="noopener noreferrer"
+          target="_blank"
         >
           Open-source code
         </a>
         {""} by Michaela Kleer
+      </div>
+      <div className="logoCredit">
+        Created my free logo at{" "}
+        <a href="https://logomakr.com/" target="_blank">
+          LogoMakr.com
+        </a>
       </div>
     </div>
   );

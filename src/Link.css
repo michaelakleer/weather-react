@@ -1,8 +1,19 @@
 .Link a {
   color: #ffffff;
+  text-decoration: underline;
+}
+
+.Link a:hover {
+  text-emphasis: none;
 }
 
 .Link .openSource {
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.Link .logoCredit {
   color: #ffffff;
   font-size: 12px;
   text-align: center;
