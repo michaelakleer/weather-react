@@ -27,11 +27,6 @@ export default function SearchEngine() {
               <i className="fas fa-map-marker-alt"></i>
             </button>
           </div>
-          <div className="col-1 units">
-            <p>
-              <a href="/">°C</a> | <a href="/">°F</a>
-            </p>
-          </div>
         </div>
       </form>
     </div>

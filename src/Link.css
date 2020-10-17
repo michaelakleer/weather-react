@@ -1,4 +1,9 @@
+.Link a {
+  color: #ffffff;
+}
+
 .Link .openSource {
+  color: #ffffff;
   font-size: 12px;
   text-align: center;
 }

@@ -7,7 +7,10 @@ export default function WeatherCurrentTemperature(props) {
       <ul>
         <li>
           <div>
-            <span className="currentTemp">{props.temperature}°C</span>
+            <span className="currentTemp">{props.temperature}</span>
+            <span className="units">
+              <a href="/">°C</a> | <a href="/">°F</a>
+            </span>
           </div>
         </li>
         <li>
