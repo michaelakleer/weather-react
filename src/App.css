@@ -11,19 +11,14 @@ h2 {
   text-align: center;
 }
 
-.App ul {
+.forecastRows ul {
   margin: 0 auto;
   padding: 0;
 }
 
-.App li {
+li {
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.App li:first-letter {
-  text-transform: capitalize;
+  margin-bottom: 12px;
 }
 
 .App .container {

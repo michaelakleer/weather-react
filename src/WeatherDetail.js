@@ -16,7 +16,7 @@ export default function WeatherDetail() {
         <div className="col-sm-6">
           <WeatherCurrentTemperature temperature={18} feelTemperature={20} />
         </div>
-        <div className="col-sm-4">
+        <div className="col-sm-12">
           <WeatherInfo humidity={65} wind={30} />
         </div>
       </div>
