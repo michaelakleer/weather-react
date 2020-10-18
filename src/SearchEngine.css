@@ -1,5 +1,6 @@
 .logo {
-  max-width: 200px;
+  position: relative;
+  left: 43px;
 }
 
 .searchEngine button {
