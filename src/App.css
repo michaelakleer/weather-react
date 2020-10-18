@@ -11,13 +11,6 @@ h2 {
   text-align: center;
 }
 
-form,
-h1,
-h2,
-.allData {
-  font-family: "Mulish", sans-serif;
-}
-
 .App ul {
   margin: 0 auto;
   padding: 0;

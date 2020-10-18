@@ -1,7 +1,6 @@
 .weatherDetail {
-  border: 5px solid white;
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
   margin: 25px auto;
   max-width: 650px;
   padding: 10px 2px;

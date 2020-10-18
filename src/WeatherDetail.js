@@ -9,15 +9,12 @@ export default function WeatherDetail() {
   return (
     <div className="weatherDetail">
       <div className="row">
-        <div className="col-sm-4">
-          <WeatherIcon />
+        <div className="col-3"></div>
+        <div className="col-sm-2">
+          <WeatherIcon weatherDescription="Clear skies" />
         </div>
-        <div className="col-sm-4">
-          <WeatherCurrentTemperature
-            temperature={18}
-            feelTemperature={20}
-            weatherDescription="Clear skies"
-          />
+        <div className="col-sm-6">
+          <WeatherCurrentTemperature temperature={18} feelTemperature={20} />
         </div>
         <div className="col-sm-4">
           <WeatherInfo humidity={65} wind={30} />

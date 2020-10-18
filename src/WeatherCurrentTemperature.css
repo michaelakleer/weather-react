@@ -2,12 +2,8 @@
   color: #ffffff;
 }
 
-.weatherCurrentTemperature {
-  color: #ffffff;
-}
-
 .weatherCurrentTemperature .currentTemp {
-  font-size: 35px;
+  font-size: 45px;
   margin: 0;
 }
 
@@ -15,14 +11,10 @@
   margin-bottom: 5px;
 }
 
-.weatherCurrentTemperature .weatherDescription {
-  font-size: 15px;
-}
-
 .weatherCurrentTemperature .units {
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
-  top: -13px;
+  top: -19px;
 }
 
 .weatherCurrentTemperature .units:hover {

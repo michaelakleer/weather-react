@@ -16,9 +16,6 @@ export default function WeatherCurrentTemperature(props) {
         <li>
           <span className="feelTemp">Feels like {props.feelTemperature}</span>
         </li>
-        <li>
-          <span className="weatherDescription">{props.weatherDescription}</span>
-        </li>
       </ul>
     </div>
   );
