@@ -3,18 +3,13 @@
 }
 
 .weatherCurrentTemperature .currentTemp {
-  font-size: 45px;
-  margin: 0;
-}
-
-.weatherCurrentTemperature .feelTemp {
-  margin-bottom: 5px;
+  font-size: 50px;
 }
 
 .weatherCurrentTemperature .units {
   font-size: 16px;
   position: relative;
-  top: -19px;
+  top: -23px;
 }
 
 .weatherCurrentTemperature .units:hover {

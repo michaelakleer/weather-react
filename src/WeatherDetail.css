@@ -3,21 +3,19 @@
   font-family: "Open Sans", sans-serif;
   margin: 25px auto;
   max-width: 650px;
-  padding: 10px 2px;
+
   text-align: center;
 }
 
 .weatherDetail ul {
-  margin: 0 auto;
+  margin-top: 0 auto;
   padding: 0;
 }
 
-.weatherDetail li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.weatherDetail .icon {
+  margin-top: 8px;
 }
 
-.weatherDetail li:first-letter {
-  text-transform: capitalize;
+.weatherDetail .temperature {
+  margin-top: 4px;
 }

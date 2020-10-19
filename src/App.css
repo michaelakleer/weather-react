@@ -11,18 +11,16 @@ h2 {
   text-align: center;
 }
 
-.forecastRows ul {
-  margin: 0 auto;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  margin-bottom: 12px;
-}
-
 .App .container {
   display: block;
   margin: 20 0 20 0;
   padding-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.forecastRows {
+  margin-left: 50px;
 }
