@@ -32,3 +32,8 @@
   display: inline;
   color: #ffffff;
 }
+
+.searchEngine .logo {
+  position: relative;
+  left: 32px;
+}
