@@ -1,4 +1,6 @@
 .Forecast {
-  border: 1px solid #ffffff;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 35px;
+  padding: 7px 30px 7px 30px;
 }
