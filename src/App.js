@@ -16,19 +16,19 @@ export default function App() {
         <WeatherDetail />
         <ul className="forcastRows">
           <li>
-            <Forecast time="14:00" description="Clear skies" temperature="19" />
+            <Forecast time="14:00" description="Clear skies" temperature="20" />
           </li>
           <li>
-            <Forecast time="14:00" description="Clear skies" temperature="19" />
+            <Forecast time="16:00" description="Clear skies" temperature="21" />
           </li>
           <li>
-            <Forecast time="14:00" description="Clear skies" temperature="19" />
+            <Forecast time="18:00" description="Clear skies" temperature="19" />
           </li>
           <li>
-            <Forecast time="14:00" description="Clear skies" temperature="19" />
+            <Forecast time="20:00" description="Cloudy" temperature="15" />
           </li>
           <li>
-            <Forecast time="14:00" description="Clear skies" temperature="19" />
+            <Forecast time="22:00" description="Cloudy" temperature="14" />
           </li>
         </ul>
         <Link />

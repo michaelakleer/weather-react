@@ -27,10 +27,9 @@
   padding: 9px 30px;
 }
 
-.searchEngine .units {
-  font-size: 14px;
-  display: inline;
-  color: #ffffff;
+.searchEngine .searchButton:hover {
+  background: #e2e6ea;
+  transition: 200ms ease-in-out;
 }
 
 .searchEngine .logo {
