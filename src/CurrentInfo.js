@@ -2,6 +2,8 @@ import React from "react";
 import CurrentLocation from "./CurrentLocation";
 import CurrentDate from "./CurrentDate";
 
+import "./CurrentInfo.css";
+
 export default function CurrentInfo() {
   return (
     <div className="row currentInfo">
