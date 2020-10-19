@@ -1,16 +1,18 @@
 import React from "react";
 import "./WeatherIcon";
 
+import ReactAnimatedWeather from "react-animated-weather";
+
 export default function WeatherIcon(props) {
   return (
     <div className="weatherIcon">
       <ul>
         <li>
-          <img
-            src="http://openweathermap.org/img/wn/01d@2x.png"
-            alt="Clear"
-            id="weather-icon"
-            className="weatherIcon"
+          <ReactAnimatedWeather
+            icon="CLEAR_DAY"
+            color="white"
+            size={65}
+            animate={true}
           />
         </li>
         <li>
