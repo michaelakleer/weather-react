@@ -1,15 +1,15 @@
 import React from "react";
-import CurrentLocation from "./CurrentLocation";
-import CurrentDate from "./CurrentDate";
 
 import "./CurrentInfo.css";
 
 export default function CurrentInfo() {
   return (
     <div className="row currentInfo">
-      <div className="col">
-        <CurrentLocation location="Toronto, CA" />
-        <CurrentDate date="September 23, 2020 | 13:26" />
+      <div className="col-12 currentLocation">
+        <h1>Toronto, ON</h1>
+      </div>
+      <div className="col-12 currentDate">
+        <h2>October 20, 2020</h2>
       </div>
     </div>
   );

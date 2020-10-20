@@ -29,7 +29,7 @@
 
 .searchEngine .searchButton:hover {
   background: #e2e6ea;
-  transition: 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .searchEngine .logo {

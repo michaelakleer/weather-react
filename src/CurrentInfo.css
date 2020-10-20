@@ -2,3 +2,13 @@
   color: #ffffff;
   font-family: "Fjalla One", sans-serif;
 }
+
+.currentInfo h1 {
+  font-size: 50px;
+  margin: 0px 30px;
+}
+
+.currentInfo h2 {
+  font-size: 30px;
+  margin-top: 4px;
+}
