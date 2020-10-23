@@ -18,7 +18,7 @@ export default function WeatherDetail(props) {
                 animate={true}
               />
             </li>
-            <li>
+            <li className="text-capitalize">
               <span className="weatherDescription">
                 {props.weatherDescription}
               </span>
