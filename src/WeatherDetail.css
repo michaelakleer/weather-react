@@ -3,13 +3,7 @@
   font-family: "Open Sans", sans-serif;
   margin: 25px auto;
   max-width: 650px;
-
   text-align: center;
-}
-
-.weatherDetail ul {
-  margin-top: 0 auto;
-  padding: 0;
 }
 
 .weatherDetail .icon {
@@ -18,4 +12,12 @@
 
 .weatherDetail .temperature {
   margin-top: 4px;
+}
+
+.weatherDetail a {
+  color: #ffffff;
+}
+
+.weatherDetail .currentTemp {
+  font-size: 50px;
 }

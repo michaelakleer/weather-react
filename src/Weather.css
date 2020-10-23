@@ -1,0 +1,15 @@
+.Weather ul {
+  margin-top: 0 auto;
+  padding: 0;
+}
+
+.Weather .units {
+  font-size: 16px;
+  position: relative;
+  top: -23px;
+}
+
+.Weather .units:hover {
+  color: #ffffff;
+  cursor: default;
+}

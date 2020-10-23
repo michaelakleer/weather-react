@@ -1,26 +1,5 @@
-body {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-}
-
-html {
-  height: 100%;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
 .App .container {
   display: block;
   margin: 20 0 20 0;
   padding-bottom: 20px;
-}
-
-li {
-  list-style: none;
-}
-
-.forecastRows {
-  margin-left: 50px;
 }
