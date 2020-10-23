@@ -7,8 +7,8 @@ export default function WeatherDetail(props) {
   return (
     <div className="weatherDetail">
       <div className="row">
-        <div className="col-3"></div>
-        <div className="col-sm-2 icon">
+        <div className="col-2"></div>
+        <div className="col-sm-4 icon">
           <ul>
             <li>
               <ReactAnimatedWeather
@@ -25,7 +25,7 @@ export default function WeatherDetail(props) {
             </li>
           </ul>
         </div>
-        <div className="col-sm-6 temperature">
+        <div className="col-sm-3 temperature">
           <ul>
             <li>
               <div>
