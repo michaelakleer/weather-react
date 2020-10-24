@@ -43,7 +43,7 @@ export default function CurrentInfo(props) {
   return (
     <div className="row currentInfo">
       <div className="col-12 currentLocation">
-        <h1>Toronto, ON</h1>
+        <h1>{props.city}</h1>
       </div>
       <div className="col-12 currentDate">
         <h2>

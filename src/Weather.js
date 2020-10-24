@@ -8,11 +8,13 @@ import "./Weather.css";
 
 export default function Weather(props) {
   const [data, setData] = useState({ ready: false });
+  const [city, setCity] = useState(props.city);
 
   function showWeather(response) {
     setData({
       ready: true,
       date: new Date(response.data.dt * 1000),
+      city: response.data.name,
       temperature: response.data.main.temp,
       feelsLike: response.data.main.feels_like,
       wind: response.data.wind.speed,
@@ -21,10 +23,25 @@ export default function Weather(props) {
     });
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
+
+  function search() {
+    const apiKey = "fe9166a2542aaa38d4bef618206979ca";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showWeather);
+  }
+
   if (data.ready) {
     return (
       <div className="Weather">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-12 logo">
               {" "}
@@ -40,6 +57,7 @@ export default function Weather(props) {
                 autoFocus="on"
                 autoComplete="off"
                 className="form-control searchBar"
+                onChange={updateCity}
               />
             </div>
             <div className="col-2">
@@ -56,7 +74,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <CurrentInfo date={data.date} />
+        <CurrentInfo city={data.city} date={data.date} />
         <WeatherDetail
           weatherDescription={data.description}
           temperature={Math.round(data.temperature)}
@@ -72,10 +90,7 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    const apiKey = "fe9166a2542aaa38d4bef618206979ca";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(showWeather);
-
+    search();
     return <div>Searching...</div>;
   }
 }
