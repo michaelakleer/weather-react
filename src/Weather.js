@@ -4,17 +4,15 @@ import CurrentInfo from "./CurrentInfo";
 import WeatherDetail from "./WeatherDetail";
 import Forecast from "./Forecast";
 import axios from "axios";
-
 import "./Weather.css";
 
 export default function Weather(props) {
   const [data, setData] = useState({ ready: false });
 
   function showWeather(response) {
-    console.log(response);
-
     setData({
       ready: true,
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       feelsLike: response.data.main.feels_like,
       wind: response.data.wind.speed,
@@ -27,7 +25,7 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <SearchEngine />
-        <CurrentInfo />
+        <CurrentInfo date={data.date} />
         <WeatherDetail
           weatherDescription={data.description}
           temperature={Math.round(data.temperature)}
