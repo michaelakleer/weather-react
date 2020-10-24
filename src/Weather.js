@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import SearchEngine from "./SearchEngine";
 import CurrentInfo from "./CurrentInfo";
 import WeatherDetail from "./WeatherDetail";
 import Forecast from "./Forecast";
 import axios from "axios";
+import logo from "./logo.png";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -24,7 +24,38 @@ export default function Weather(props) {
   if (data.ready) {
     return (
       <div className="Weather">
-        <SearchEngine />
+        <form>
+          <div className="row">
+            <div className="col-12 logo">
+              {" "}
+              <img src={logo} alt="Logo" />{" "}
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-1"></div>
+            <div className="col-7">
+              <input
+                type="search"
+                placeholder="Search city..."
+                autoFocus="on"
+                autoComplete="off"
+                className="form-control searchBar"
+              />
+            </div>
+            <div className="col-2">
+              <input
+                type="submit"
+                className="btn btn-light searchButton"
+                value="Search"
+              />
+            </div>
+            <div className="col-1">
+              <button type="submit" className="btn btn-light">
+                <i className="fas fa-map-marker-alt"></i>
+              </button>
+            </div>
+          </div>
+        </form>
         <CurrentInfo date={data.date} />
         <WeatherDetail
           weatherDescription={data.description}
