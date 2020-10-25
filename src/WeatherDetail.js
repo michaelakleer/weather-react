@@ -1,5 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
+import Temperature from "./Temperature";
 
 import "./WeatherDetail.css";
 
@@ -22,21 +23,12 @@ export default function WeatherDetail(props) {
         </div>
         <div className="col-sm-3 temperature">
           <ul>
-            <li>
-              <div>
-                <span className="currentTemp">
-                  {Math.round(props.weatherData.temperature)}
-                </span>
-                <span className="units">
-                  <a href="/">°C</a> | <a href="/">°F</a>
-                </span>
-              </div>
-            </li>
-            <li>
-              <span className="feelTemp">
-                Feels like {Math.round(props.weatherData.feelsLike)}
-              </span>
-            </li>
+            <div>
+              <Temperature
+                celsius={props.weatherData.temperature}
+                feelsLikeCelsius={props.weatherData.feelsLike}
+              />
+            </div>
           </ul>
         </div>
         <div className="col-sm-12">
