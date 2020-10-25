@@ -1,6 +1,6 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 
-import ReactAnimatedWeather from "react-animated-weather";
 import "./WeatherDetail.css";
 
 export default function WeatherDetail(props) {
@@ -11,16 +11,11 @@ export default function WeatherDetail(props) {
         <div className="col-sm-4 icon">
           <ul>
             <li>
-              <ReactAnimatedWeather
-                icon="CLEAR_DAY"
-                color="white"
-                size={65}
-                animate={true}
-              />
+              <WeatherIcon info={props.weatherData.icon} />
             </li>
             <li className="text-capitalize">
               <span className="weatherDescription">
-                {props.weatherDescription}
+                {props.weatherData.description}
               </span>
             </li>
           </ul>
@@ -29,7 +24,9 @@ export default function WeatherDetail(props) {
           <ul>
             <li>
               <div>
-                <span className="currentTemp">{props.temperature}</span>
+                <span className="currentTemp">
+                  {Math.round(props.weatherData.temperature)}
+                </span>
                 <span className="units">
                   <a href="/">°C</a> | <a href="/">°F</a>
                 </span>
@@ -37,7 +34,7 @@ export default function WeatherDetail(props) {
             </li>
             <li>
               <span className="feelTemp">
-                Feels like {props.feelTemperature}
+                Feels like {Math.round(props.weatherData.feelsLike)}
               </span>
             </li>
           </ul>
@@ -45,10 +42,12 @@ export default function WeatherDetail(props) {
         <div className="col-sm-12">
           <ul>
             <li>
-              <span id="humidity">Humidity: {props.humidity}%</span>
+              <span id="humidity">Humidity: {props.weatherData.humidity}%</span>
             </li>
             <li>
-              <span id="wind-speed">Wind: {props.wind}km/h</span>
+              <span id="wind-speed">
+                Wind: {Math.round(props.weatherData.wind)}km/h
+              </span>
             </li>
           </ul>
         </div>

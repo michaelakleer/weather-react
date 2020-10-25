@@ -19,6 +19,7 @@ export default function Weather(props) {
       feelsLike: response.data.main.feels_like,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
     });
   }
@@ -75,13 +76,7 @@ export default function Weather(props) {
           </div>
         </form>
         <CurrentInfo city={data.city} date={data.date} />
-        <WeatherDetail
-          weatherDescription={data.description}
-          temperature={Math.round(data.temperature)}
-          feelTemperature={Math.round(data.feelsLike)}
-          humidity={data.humidity}
-          wind={Math.round(data.wind)}
-        />
+        <WeatherDetail weatherData={data} />
         <Forecast time="14:00" description="Clear skies" temperature="20" />
         <Forecast time="16:00" description="Clear skies" temperature="21" />
         <Forecast time="18:00" description="Clear skies" temperature="19" />
