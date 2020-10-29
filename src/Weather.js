@@ -77,11 +77,7 @@ export default function Weather(props) {
         </form>
         <CurrentInfo city={data.city} date={data.date} />
         <WeatherDetail weatherData={data} />
-        <Forecast time="14:00" description="Clear skies" temperature="20" />
-        <Forecast time="16:00" description="Clear skies" temperature="21" />
-        <Forecast time="18:00" description="Clear skies" temperature="19" />
-        <Forecast time="20:00" description="Cloudy" temperature="15" />
-        <Forecast time="22:00" description="Cloudy" temperature="14" />
+        <Forecast city={data.city} />
       </div>
     );
   } else {

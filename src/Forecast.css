@@ -1,11 +1,5 @@
 .Forecast {
   color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 35px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  margin: 0 10px 12px 112px;
-  max-width: 860px;
-  padding: 8px 30px 8px 30px;
 }
 
 .Forecast ul {
