@@ -1,6 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
-import Temperature from "./Temperature";
+import ConvertableData from "./ConvertableData";
 
 import "./WeatherDetail.css";
 
@@ -21,28 +21,7 @@ export default function WeatherDetail(props) {
             </li>
           </ul>
         </div>
-        <div className="col-sm-3 temperature">
-          <ul>
-            <div>
-              <Temperature
-                celsius={props.weatherData.temperature}
-                feelsLikeCelsius={props.weatherData.feelsLike}
-              />
-            </div>
-          </ul>
-        </div>
-        <div className="col-sm-12">
-          <ul>
-            <li>
-              <span id="humidity">Humidity: {props.weatherData.humidity}%</span>
-            </li>
-            <li>
-              <span id="wind-speed">
-                Wind: {Math.round(props.weatherData.wind)}km/h
-              </span>
-            </li>
-          </ul>
-        </div>
+        <ConvertableData data={props.weatherData} />
       </div>
     </div>
   );

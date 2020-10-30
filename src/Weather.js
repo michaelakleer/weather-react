@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CurrentInfo from "./CurrentInfo";
 import WeatherDetail from "./WeatherDetail";
-import Forecast from "./Forecast";
+
 import axios from "axios";
 import logo from "./logo.png";
 import "./Weather.css";
@@ -77,7 +77,6 @@ export default function Weather(props) {
         </form>
         <CurrentInfo city={data.city} date={data.date} />
         <WeatherDetail weatherData={data} />
-        <Forecast city={data.city} />
       </div>
     );
   } else {
