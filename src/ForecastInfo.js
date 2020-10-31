@@ -5,8 +5,12 @@ import "./ForecastInfo.css";
 export default function ForecastInfo(props) {
   let unit = props.convertUnit;
 
-  function forecastFahrenheit() {
-    return (props.data.main.temp * 9) / 5 + 32;
+  function forecastFahrenheitMax() {
+    return (props.data.main.temp_max * 9) / 5 + 32;
+  }
+
+  function forecastFahrenheitMin() {
+    return (props.data.main.temp_min * 9) / 5 + 32;
   }
 
   if (unit === "celsius") {
@@ -19,7 +23,12 @@ export default function ForecastInfo(props) {
           <div className="col-4 forecastIcon">
             <WeatherIcon info={props.data.weather[0].icon} />
           </div>
-          <div className="col-4 temp">{Math.round(props.data.main.temp)}°C</div>
+          <div className="col-4 temp">
+            <i className="fas fa-thermometer-full"></i>{" "}
+            {Math.round(props.data.main.temp_max)}°C |{" "}
+            <i className="fas fa-thermometer-empty"></i>{" "}
+            {Math.round(props.data.main.temp_min)}°C
+          </div>
         </div>
       </div>
     );
@@ -34,7 +43,10 @@ export default function ForecastInfo(props) {
             <WeatherIcon info={props.data.weather[0].icon} />
           </div>
           <div className="col-4 temp">
-            {Math.round(forecastFahrenheit())}°F{" "}
+            <i className="fas fa-thermometer-full"></i>{" "}
+            {Math.round(forecastFahrenheitMax())}°F |{" "}
+            <i className="fas fa-thermometer-empty"></i>{" "}
+            {Math.round(forecastFahrenheitMin())}°F
           </div>
         </div>
       </div>
