@@ -2,10 +2,7 @@
   border: 2px solid #ffffff;
   border-radius: 35px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 auto;
   margin-bottom: 15px;
-  max-width: 860px;
 }
 
 .ForecastInfo canvas {
