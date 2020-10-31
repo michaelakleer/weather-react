@@ -13,22 +13,29 @@ export default function ForecastInfo(props) {
     return (
       <div className="ForecastInfo">
         <div className="row">
-          <div className="col-4">
+          <div className="col-4 hour">
             {new Date(props.data.dt * 1000).getHours()}:00
           </div>
-          <div className="col-4">
+          <div className="col-4 icon">
             <WeatherIcon info={props.data.weather[0].icon} />
           </div>
-          <div className="col-4">{Math.round(props.data.main.temp)}°C</div>
+          <div className="col-4 temp">{Math.round(props.data.main.temp)}°C</div>
         </div>
       </div>
     );
   } else {
     return (
       <div className="ForecastInfo">
-        {new Date(props.data.dt * 1000).getHours()}:00{" "}
-        <WeatherIcon info={props.data.weather[0].icon} />
-        {Math.round(forecastFahrenheit())}°F{" "}
+        <div className="row">
+          <div className="col-4">
+            {new Date(props.data.dt * 1000).getHours()}:00{" "}
+          </div>
+          <div className="col-4">
+            <WeatherIcon info={props.data.weather[0].icon} />
+          </div>
+
+          <div className="col-4">{Math.round(forecastFahrenheit())}°F </div>
+        </div>
       </div>
     );
   }

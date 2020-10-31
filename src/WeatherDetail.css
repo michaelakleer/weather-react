@@ -1,9 +1,7 @@
 .weatherDetail {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  margin: 0 auto;
-  max-width: 650px;
-  text-align: center;
+  margin-top: 20px;
 }
 
 .weatherDetail .icon {
@@ -20,4 +18,9 @@
 
 .weatherDetail .currentTemp {
   font-size: 50px;
+}
+
+.weatherDetail .humidityAndWind {
+  margin-bottom: 10px;
+  text-align: center;
 }

@@ -24,8 +24,8 @@ export default function WeatherDetail(props) {
     return (
       <div className="weatherDetail">
         <div className="row">
-          <div className="col-2"></div>
-          <div className="col-sm-4 icon">
+          <div className="col-4"></div>
+          <div className="col-sm-3 icon">
             <ul>
               <li>
                 <WeatherIcon info={props.data.icon} />
@@ -56,7 +56,10 @@ export default function WeatherDetail(props) {
               </li>
             </ul>
           </div>
-          <div className="col-sm-12">
+        </div>
+        <div className="row humidityAndWind">
+          <div className="col-5"></div>
+          <div className="col-sm-2">
             <ul>
               <li>
                 <span id="humidity">Humidity: {props.data.humidity}%</span>
@@ -66,16 +69,17 @@ export default function WeatherDetail(props) {
               </li>
             </ul>
           </div>
-          <Forecast city={props.data.city} unit={unit} />
         </div>
+
+        <Forecast city={props.data.city} unit={unit} />
       </div>
     );
   } else {
     return (
       <div className="weatherDetail">
         <div className="row">
-          <div className="col-2"></div>
-          <div className="col-sm-4 icon">
+          <div className="col-4"></div>
+          <div className="col-sm-3 icon">
             <ul>
               <li>
                 <WeatherIcon info={props.data.icon} />
@@ -87,39 +91,40 @@ export default function WeatherDetail(props) {
               </li>
             </ul>
           </div>
-          <div>
-            <div className="col-sm-3 temperature">
-              <ul>
-                <li>
-                  <Temperature celsius={props.data.temperature} unit={unit} />
-                  <span className="units">
-                    <a href="/" onClick={displayCelsius}>
-                      °C
-                    </a>{" "}
-                    | °F
-                  </span>
-                </li>
-                <li>
-                  <TemperatureFeelsLike
-                    feelsLikeCelsius={props.data.feelsLike}
-                    unit={unit}
-                  />
-                </li>
-              </ul>
-            </div>
-            <div className="col-sm-12">
-              <ul>
-                <li>
-                  <span id="humidity">Humidity: {props.data.humidity}%</span>
-                </li>
-                <li>
-                  <Wind windCelsius={props.data.wind} unit={unit} />
-                </li>
-              </ul>
-            </div>
-            <Forecast city={props.data.city} unit={unit} />
+          <div className="col-sm-4 temperature">
+            <ul>
+              <li>
+                <Temperature celsius={props.data.temperature} unit={unit} />
+                <span className="units">
+                  <a href="/" onClick={displayCelsius}>
+                    °C
+                  </a>{" "}
+                  | °F
+                </span>
+              </li>
+              <li>
+                <TemperatureFeelsLike
+                  feelsLikeCelsius={props.data.feelsLike}
+                  unit={unit}
+                />
+              </li>
+            </ul>
           </div>
         </div>
+        <div className="row humidityAndWind">
+          <div className="col-5"></div>
+          <div className="col-sm-2">
+            <ul>
+              <li>
+                <span id="humidity">Humidity: {props.data.humidity}%</span>
+              </li>
+              <li>
+                <Wind windCelsius={props.data.wind} unit={unit} />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <Forecast city={props.data.city} unit={unit} />
       </div>
     );
   }

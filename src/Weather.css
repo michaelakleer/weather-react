@@ -1,3 +1,8 @@
+.Weather {
+  display: block;
+  margin: 0 auto;
+}
+
 .Weather ul {
   margin-top: 0 auto;
   padding: 0;

@@ -2,10 +2,22 @@
   border: 2px solid #ffffff;
   border-radius: 35px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
+  display: block;
+  margin: 0 205px 15px;
+  max-width: 700px;
+  font-size: 19px;
+  line-height: 14px;
 }
 
 .ForecastInfo canvas {
   width: 35px;
   height: 35px;
+}
+
+.ForecastInfo .hour {
+  padding-top: 12px;
+}
+
+.ForecastInfo .temp {
+  padding-top: 12px;
 }
