@@ -1,10 +1,9 @@
 .Link a {
   color: #ffffff;
-  text-decoration: underline;
 }
 
 .Link a:hover {
-  text-emphasis: none;
+  text-decoration: underline;
 }
 
 .Link .openSource {

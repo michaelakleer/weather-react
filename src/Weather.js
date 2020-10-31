@@ -40,6 +40,19 @@ export default function Weather(props) {
     axios.get(apiUrl).then(showWeather);
   }
 
+  function searchGeolocation(position) {
+    let longitude = position.coords.longitude;
+    let latitude = position.coords.latitude;
+
+    const apiKey = "fe9166a2542aaa38d4bef618206979ca";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showWeather);
+  }
+
+  function handleGeolocation() {
+    navigator.geolocation.getCurrentPosition(searchGeolocation);
+  }
+
   if (data.ready) {
     return (
       <div className="Weather">
@@ -70,7 +83,11 @@ export default function Weather(props) {
               />
             </div>
             <div className="col-1">
-              <button type="submit" className="btn btn-light">
+              <button
+                type="submit"
+                className="btn btn-light"
+                onClick={handleGeolocation}
+              >
                 <i className="fas fa-map-marker-alt"></i>
               </button>
             </div>

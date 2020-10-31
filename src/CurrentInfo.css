@@ -6,9 +6,11 @@
 .currentInfo h1 {
   font-size: 50px;
   margin: 0px 30px;
+  letter-spacing: 1px;
 }
 
 .currentInfo h2 {
   font-size: 30px;
   margin-top: 4px;
+  letter-spacing: 1px;
 }
