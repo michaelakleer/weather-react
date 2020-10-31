@@ -16,7 +16,7 @@ export default function ForecastInfo(props) {
           <div className="col-4 hour">
             {new Date(props.data.dt * 1000).getHours()}:00
           </div>
-          <div className="col-4 icon">
+          <div className="col-4 forecastIcon">
             <WeatherIcon info={props.data.weather[0].icon} />
           </div>
           <div className="col-4 temp">{Math.round(props.data.main.temp)}°C</div>
@@ -27,14 +27,15 @@ export default function ForecastInfo(props) {
     return (
       <div className="ForecastInfo">
         <div className="row">
-          <div className="col-4">
+          <div className="col-4 hour">
             {new Date(props.data.dt * 1000).getHours()}:00{" "}
           </div>
-          <div className="col-4">
+          <div className="col-4 forecastIcon">
             <WeatherIcon info={props.data.weather[0].icon} />
           </div>
-
-          <div className="col-4">{Math.round(forecastFahrenheit())}°F </div>
+          <div className="col-4 temp">
+            {Math.round(forecastFahrenheit())}°F{" "}
+          </div>
         </div>
       </div>
     );

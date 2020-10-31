@@ -25,7 +25,7 @@ export default function WeatherDetail(props) {
       <div className="weatherDetail">
         <div className="row">
           <div className="col-4"></div>
-          <div className="col-sm-3 icon">
+          <div className="col-sm-2 icon">
             <ul>
               <li>
                 <WeatherIcon info={props.data.icon} />
@@ -37,7 +37,7 @@ export default function WeatherDetail(props) {
               </li>
             </ul>
           </div>
-          <div className="col-sm-4 temperature">
+          <div className="col-sm-2 temperature">
             <ul>
               <li>
                 <Temperature celsius={props.data.temperature} unit={unit} />
@@ -56,6 +56,7 @@ export default function WeatherDetail(props) {
               </li>
             </ul>
           </div>
+          <div className="col-2"></div>
         </div>
         <div className="row humidityAndWind">
           <div className="col-5"></div>
@@ -79,7 +80,7 @@ export default function WeatherDetail(props) {
       <div className="weatherDetail">
         <div className="row">
           <div className="col-4"></div>
-          <div className="col-sm-3 icon">
+          <div className="col-sm-2 icon">
             <ul>
               <li>
                 <WeatherIcon info={props.data.icon} />
@@ -91,7 +92,7 @@ export default function WeatherDetail(props) {
               </li>
             </ul>
           </div>
-          <div className="col-sm-4 temperature">
+          <div className="col-sm-2 temperature">
             <ul>
               <li>
                 <Temperature celsius={props.data.temperature} unit={unit} />
@@ -110,6 +111,7 @@ export default function WeatherDetail(props) {
               </li>
             </ul>
           </div>
+          <div className="col-2"></div>
         </div>
         <div className="row humidityAndWind">
           <div className="col-5"></div>

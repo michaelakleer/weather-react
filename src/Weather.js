@@ -21,6 +21,7 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
+      country: response.data.sys.country,
     });
   }
 
@@ -75,7 +76,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <CurrentInfo city={data.city} date={data.date} />
+        <CurrentInfo city={data.city} country={data.country} date={data.date} />
         <WeatherDetail data={data} />
       </div>
     );

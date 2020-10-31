@@ -5,8 +5,8 @@
   display: block;
   margin: 0 205px 15px;
   max-width: 700px;
-  font-size: 19px;
-  line-height: 14px;
+  font-size: 17px;
+  line-height: 22px;
 }
 
 .ForecastInfo canvas {
@@ -15,9 +15,13 @@
 }
 
 .ForecastInfo .hour {
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .ForecastInfo .temp {
-  padding-top: 12px;
+  padding-top: 10px;
+}
+
+.ForecastInfo .forecastIcon {
+  padding-top: 5px;
 }

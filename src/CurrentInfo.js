@@ -41,11 +41,13 @@ export default function CurrentInfo(props) {
   }
 
   return (
-    <div className="row currentInfo">
-      <div className="col-12 currentLocation">
-        <h1>{props.city}</h1>
+    <div className="currentInfo">
+      <div className="currentLocation">
+        <h1>
+          {props.city}, {props.country}
+        </h1>
       </div>
-      <div className="col-12 currentDate">
+      <div className="currentDate">
         <h2>
           {day}, {month} {date}, {year} | {hours}:{minutes}
         </h2>
