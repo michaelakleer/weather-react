@@ -25,3 +25,35 @@
   margin-bottom: 10px;
   text-align: center;
 }
+
+.weatherDetail .units {
+  font-size: 16px;
+  position: relative;
+  top: -24px;
+}
+
+.weatherDetail .activeUnitCelsius {
+  font-weight: bold;
+  left: -3px;
+}
+
+.weatherDetail .activeUnitFahrenheit {
+  font-weight: bold;
+  position: relative;
+  left: -3px;
+}
+
+.weatherDetail .fahrenheitInactive {
+  position: relative;
+  right: -5px;
+}
+
+.weatherDetail .fahrenheitInactiveUnit {
+  position: relative;
+  left: -4px;
+}
+
+.weatherDetail .celsiusInactive {
+  position: relative;
+  right: -1px;
+}

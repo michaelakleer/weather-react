@@ -42,10 +42,15 @@ export default function WeatherDetail(props) {
               <li>
                 <Temperature celsius={props.data.temperature} unit={unit} />
                 <span className="units">
-                  °C |{" "}
-                  <a href="/" onClick={displayFahrenheit}>
-                    °F
-                  </a>
+                  <span className="activeUnitCelsius">°C</span>{" "}
+                  <span className="fahrenheitInactive">
+                    |{" "}
+                    <span className="fahrenheitInactiveUnit">
+                      <a href="/" onClick={displayFahrenheit}>
+                        °F
+                      </a>
+                    </span>
+                  </span>
                 </span>
               </li>
               <li>
@@ -71,7 +76,6 @@ export default function WeatherDetail(props) {
             </ul>
           </div>
         </div>
-
         <Forecast city={props.data.city} unit={unit} />
       </div>
     );
@@ -97,10 +101,13 @@ export default function WeatherDetail(props) {
               <li>
                 <Temperature celsius={props.data.temperature} unit={unit} />
                 <span className="units">
-                  <a href="/" onClick={displayCelsius}>
-                    °C
-                  </a>{" "}
-                  | °F
+                  <span className="activeUnitFahrenheit">°F</span>{" "}
+                  <span className="celsiusInactive">
+                    |
+                    <a href="/" onClick={displayCelsius}>
+                      °C
+                    </a>
+                  </span>
                 </span>
               </li>
               <li>

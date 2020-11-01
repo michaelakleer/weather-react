@@ -24,10 +24,10 @@ export default function ForecastInfo(props) {
             <WeatherIcon info={props.data.weather[0].icon} />
           </div>
           <div className="col-4 temp">
-            <i className="fas fa-thermometer-empty"></i>{" "}
-            {Math.floor(props.data.main.temp_min)}°C |{" "}
             <i className="fas fa-thermometer-full"></i>{" "}
-            {Math.round(props.data.main.temp_max)}°C
+            {Math.round(props.data.main.temp_max)}°C |{" "}
+            <i className="fas fa-thermometer-empty"></i>{" "}
+            {Math.floor(props.data.main.temp_min)}°C
           </div>
         </div>
       </div>
@@ -43,10 +43,10 @@ export default function ForecastInfo(props) {
             <WeatherIcon info={props.data.weather[0].icon} />
           </div>
           <div className="col-4 temp">
-            <i className="fas fa-thermometer-empty"></i>{" "}
-            {Math.floor(forecastFahrenheitMin())}°F |{" "}
             <i className="fas fa-thermometer-full"></i>{" "}
-            {Math.round(forecastFahrenheitMax())}°F
+            {Math.round(forecastFahrenheitMax())}°F |{" "}
+            <i className="fas fa-thermometer-empty"></i>{" "}
+            {Math.floor(forecastFahrenheitMin())}°F
           </div>
         </div>
       </div>
