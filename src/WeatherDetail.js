@@ -95,7 +95,7 @@ export default function WeatherDetail(props) {
               </li>
             </ul>
           </div>
-          <div className="col-sm-2 temperature">
+          <div className="form-group col-sm-2 temperature">
             <ul>
               <li>
                 <Temperature celsius={props.data.temperature} unit={unit} />
@@ -109,7 +109,7 @@ export default function WeatherDetail(props) {
                   </span>
                 </span>
               </li>
-              <li>
+              <li className="feelsLike">
                 <TemperatureFeelsLike
                   feelsLikeCelsius={props.data.feelsLike}
                   unit={unit}
@@ -120,8 +120,7 @@ export default function WeatherDetail(props) {
           <div className="col-2"></div>
         </div>
         <div className="row humidityAndWind">
-          <div className="col-5"></div>
-          <div className="col-sm-2">
+          <div className="col-sm-12">
             <ul>
               <li>
                 <span id="humidity">Humidity: {props.data.humidity}%</span>
