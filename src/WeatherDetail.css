@@ -16,8 +16,8 @@
 
 .weatherDetail .activeUnitFahrenheit {
   font-weight: bold;
-  position: relative;
   left: -3px;
+  position: relative;
 }
 
 .weatherDetail .celsiusInactive {
@@ -35,8 +35,8 @@
 }
 
 .weatherDetail .fahrenheitInactiveUnit {
-  position: relative;
   left: -4px;
+  position: relative;
 }
 
 .weatherDetail .humidityAndWind {

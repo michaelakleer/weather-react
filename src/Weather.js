@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import CurrentInfo from "./CurrentInfo";
 import WeatherDetail from "./WeatherDetail";
-
 import axios from "axios";
 import logo from "./logo.png";
 import "./Weather.css";
@@ -45,14 +44,13 @@ export default function Weather(props) {
       <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="form-group col-sm-12 logo">
+            <div className="form-group col-sm-11 logo">
               {" "}
               <img src={logo} alt="Logo" />{" "}
             </div>
           </div>
           <div className="row">
-            <div className="form-group col-sm-1"></div>
-            <div className="form-group col-sm-8">
+            <div className="form-group col-sm-10">
               <input
                 type="search"
                 placeholder="Search city..."
@@ -69,7 +67,6 @@ export default function Weather(props) {
                 value="Search"
               />
             </div>
-            <div className="col-sm-1"></div>
           </div>
         </form>
         <CurrentInfo city={data.city} country={data.country} date={data.date} />
@@ -78,6 +75,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return <div>Searching...</div>;
+    return <div className="loading">Loading...</div>;
   }
 }

@@ -8,22 +8,14 @@
   padding: 0;
 }
 
-.Weather button {
-  background: #ffffff;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  padding: 11px 16px 9px 15px;
-}
-
 .Weather form {
   padding: 22px 40px;
 }
 
 .Weather img {
-  width: auto;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
+  width: auto;
 }
 
 .Weather .searchBar {
@@ -46,4 +38,10 @@
 .Weather .searchButton:hover {
   background: #e2e6ea;
   transition: all 200ms ease-in-out;
+}
+
+.loading {
+  color: #ffffff;
+  margin: 20px 0 50px;
+  text-align: center;
 }
