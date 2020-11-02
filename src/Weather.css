@@ -41,8 +41,3 @@
   background: #e2e6ea;
   transition: all 200ms ease-in-out;
 }
-
-.Weather .logo {
-  position: relative;
-  left: 96px;
-}

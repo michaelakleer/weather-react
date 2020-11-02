@@ -45,14 +45,15 @@ export default function Weather(props) {
       <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-12 logo">
+            <div className="col-1"></div>
+            <div className="col-11 logo">
               {" "}
               <img src={logo} alt="Logo" />{" "}
             </div>
           </div>
           <div className="row">
-            <div className="col-2"></div>
-            <div className="col-7">
+            <div className="col-md-0 col-lg-2"></div>
+            <div className="col-md-9 col-lg-7">
               <input
                 type="search"
                 placeholder="Search city..."
@@ -62,7 +63,7 @@ export default function Weather(props) {
                 onChange={updateCity}
               />
             </div>
-            <div className="col-2">
+            <div className="col-md-2 col-lg-2">
               <input
                 type="submit"
                 className="btn btn-light searchButton"
