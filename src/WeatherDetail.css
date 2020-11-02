@@ -5,31 +5,8 @@
   text-align: center;
 }
 
-.weatherDetail .icon {
-  margin-top: 8px;
-}
-
-.weatherDetail .temperature {
-  margin-top: 4px;
-}
-
 .weatherDetail a {
   color: #ffffff;
-}
-
-.weatherDetail .currentTemp {
-  font-size: 50px;
-}
-
-.weatherDetail .humidityAndWind {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.weatherDetail .units {
-  font-size: 16px;
-  position: relative;
-  top: -24px;
 }
 
 .weatherDetail .activeUnitCelsius {
@@ -43,6 +20,15 @@
   left: -3px;
 }
 
+.weatherDetail .celsiusInactive {
+  position: relative;
+  right: -1px;
+}
+
+.weatherDetail .currentTemp {
+  font-size: 50px;
+}
+
 .weatherDetail .fahrenheitInactive {
   position: relative;
   right: -5px;
@@ -53,7 +39,21 @@
   left: -4px;
 }
 
-.weatherDetail .celsiusInactive {
+.weatherDetail .humidityAndWind {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.weatherDetail .icon {
+  margin-top: 8px;
+}
+
+.weatherDetail .temperature {
+  margin-top: 4px;
+}
+
+.weatherDetail .units {
+  font-size: 16px;
   position: relative;
-  right: -1px;
+  top: -24px;
 }

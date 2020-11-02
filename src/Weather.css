@@ -20,6 +20,12 @@
   padding: 22px 40px;
 }
 
+.Weather img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .Weather .searchBar {
   background: #ffffff;
   border: none;
@@ -40,10 +46,4 @@
 .Weather .searchButton:hover {
   background: #e2e6ea;
   transition: all 200ms ease-in-out;
-}
-
-.Weather img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
 }
