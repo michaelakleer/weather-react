@@ -36,13 +36,13 @@ export default function ForecastInfo(props) {
     return (
       <div className="ForecastInfo">
         <div className="row">
-          <div className="col-4 hour">
+          <div className="col-sm-4 hour">
             {new Date(props.data.dt * 1000).getHours()}:00{" "}
           </div>
-          <div className="col-4 forecastIcon">
+          <div className="col-sm-4 forecastIcon">
             <WeatherIcon info={props.data.weather[0].icon} />
           </div>
-          <div className="col-4 temp">
+          <div className="col-sm-4 temp">
             <i className="fas fa-thermometer-full"></i>{" "}
             {Math.round(forecastFahrenheitMax())}°F |{" "}
             <i className="fas fa-thermometer-empty"></i>{" "}
