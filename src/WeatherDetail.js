@@ -64,8 +64,7 @@ export default function WeatherDetail(props) {
           <div className="col-2"></div>
         </div>
         <div className="row humidityAndWind">
-          <div className="col-5"></div>
-          <div className="col-sm-2">
+          <div className="col-sm-12">
             <ul>
               <li>
                 <span id="humidity">Humidity: {props.data.humidity}%</span>
